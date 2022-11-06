@@ -107,8 +107,19 @@ source "$HOME/.cargo/env"
 
 **终端运行命令来让配置立即生效**
 
+> 每次重启编辑器，需要再次运行。
 ```shell
 source /home/yuancf1024/.cargo/env
+```
+
+> 直接将Rust添加进环境变量Path
+
+**向～/.bash_profile文件中添加下面的语句** -> **.bashrc**
+
+```shell
+$ export PATH="$HOME/.cargo/bin:$PATH"
+/home/yuancf1024
+export PATH="/home/yuancf1024/.cargo/bin:$PATH"
 ```
 
 **安装最新稳定版本**
